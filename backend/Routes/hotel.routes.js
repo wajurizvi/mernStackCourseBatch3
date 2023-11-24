@@ -6,7 +6,7 @@ import {
   getHotel,
   getHotels,
 } from "../Controllers/hotelController.js";
-import { verifyAdmin } from "../utils/verifyToken.js";
+import { verifyAdmin } from "../Utils/verifyToken.js";
 const router = express.Router();
 
 //CREATE
@@ -22,6 +22,5 @@ router.get("/find/:id", getHotel);
 //GET ALL
 
 router.get("/hotels", getHotels);
-
 
 export default router;
